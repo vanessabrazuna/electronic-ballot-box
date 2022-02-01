@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Ballot Box</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div class="urn">
+    <div class="screen">
+      <div class="d-1">
+        <div class="d-1--left">
+          <div class="d-1-1">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="d-1-2">
+            <span>PREFEITO</span>
+          </div>
+          <div class="d-1-3">
+            <div class="number focus"></div>
+            <div class="number"></div>
+          </div>
+          <div class="d-1-4">
+            Nome: NOME SOBRENOME</br>
+            Partido: AAA</br>
+            Vice-Prefeito: NOME SOBRENOME
+          </div>
+        </div>
+        <div class="d-1--right">
+          <div class="d-1-image">
+            <img src="./assets/images/84.jpg" alt="man-image">
+            Prefeito
+          </div>
+          <div class="d-1-image small">
+            <img src="./assets/images/84_2.jpg" alt="woman-image">
+            Vice-Prefeito
+          </div>
+        </div>
+      </div>
+      <div class="d-2">
+        Aperte a tela:</br>
+        CONFIRMA para CONFIRMAR este voto</br>
+        CORRIGE para REINICIAR este voto
+      </div>
+    </div>
+    <div class="keyboard">
+      <div class="line-keyboard">
+        <div class="keyboard--button" onclick="clicked('1')">1</div>
+        <div class="keyboard--button" onclick="clicked('2')">2</div>
+        <div class="keyboard--button" onclick="clicked('3')">3</div>
+      </div>
+      <div class="line-keyboard">
+        <div class="keyboard--button" onclick="clicked('4')">4</div>
+        <div class="keyboard--button" onclick="clicked('5')">5</div>
+        <div class="keyboard--button" onclick="clicked('6')">6</div>
+      </div>
+      <div class="line-keyboard">
+        <div class="keyboard--button" onclick="clicked('7')">7</div>
+        <div class="keyboard--button" onclick="clicked('8')">8</div>
+        <div class="keyboard--button" onclick="clicked('9')">9</div>
+      </div>
+      <div class="line-keyboard">
+        <div class="keyboard--button" onclick="clicked('0')">0</div>
+      </div>
+      <div class="line-keyboard">
+        <div class="keyboard--button btn--white" onclick="white()">BRANCO</div>
+        <div class="keyboard--button btn--correct" onclick="correct()">CORRIGE</div>
+        <div class="keyboard--button btn--confirm" onclick="confirmed()">CONFIRMA</div>
+      </div>
+    </div>
+  </div>
+  <img class="table" src="./assets/images/table.png" alt="table">
+  <script src="./assets/js/stages.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
